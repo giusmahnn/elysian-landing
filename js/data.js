@@ -2,7 +2,8 @@
    null = not supplied yet -> the site shows a clear placeholder. */
 const ELYSIAN_DATA = {
   whatsappNumber: "8130886889"
-  phoneDisplay: "+2348130886889",
+  phoneDisplay: "+234 813 088 
+6889",
   prices: {
     land: { sqm300: null, sqm600: null, acre1: null },
     buildings: { villa: null, bungalow: null, apartment: null, businessDistrict: null },
