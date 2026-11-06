@@ -1,14 +1,13 @@
 /* Central configuration. Edit prices and payment details HERE only.
    null = not supplied yet -> the site shows a clear placeholder. */
 const ELYSIAN_DATA = {
-  whatsappNumber: "8130886889"
-  phoneDisplay: "+234 813 088 
-6889",
+  whatsappNumber: "2348130886889",
+  phoneDisplay: "+234 813 088 6889",
   prices: {
     land: { sqm300: null, sqm600: null, acre1: null },
     buildings: { villa: null, bungalow: null, apartment: null, businessDistrict: null },
     cottages: { bed1: null, bed2: null, bed3: null },
-    greenhouse: { annualLease: 1000000 }
+    greenhouse: { annualLease: 15000000 }
   },
   payment: {
     outright: true,
