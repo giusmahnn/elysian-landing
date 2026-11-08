@@ -297,9 +297,41 @@ nav ul#menu {
     margin-bottom: .3em
 }
 
+.location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    width: fit-content;
+    padding: .55rem .9rem .55rem .7rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font: italic 600 clamp(1rem, 3vw, 1.2rem) var(--serif);
+    /* background: rgba(24, 61, 43, .72);
+    border: 1px solid rgba(227, 201, 139, .75);
+    border-radius: 999px; */
+    /* box-shadow: 0 8px 24px rgba(15, 42, 29, .25); */
+    animation: location-float 3.2s ease-in-out infinite
+}
+
+.loc-icon {
+    flex: none;
+    color: #E3C98B
+}
+
 .loc {
-    font-weight: 600;
-    margin-bottom: .8rem
+    font-weight: 700;
+    line-height: 1.2
+}
+
+@keyframes location-float {
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-6px)
+    }
 }
 
 .tag {
@@ -380,7 +412,7 @@ nav ul#menu {
 
 .values {
     margin-top: 2.5rem;
-    background: var(--sage);
+    background: var(--green);
     color: #fff;
     border-radius: var(--r);
     padding: 1.4rem 1.6rem
@@ -493,13 +525,21 @@ nav ul#menu {
 .checks li {
     display: flex;
     gap: .5rem;
-    align-items: center
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.checks li:hover {
+    color: var(--green);
+    transform: scale(1.1);
 }
 
 .chk {
     width: 20px;
     flex: none;
     fill: var(--sage)
+}
+.chk:hover {
+    fill: var(--green) ;
 }
 
 .note {
