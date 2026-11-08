@@ -4,16 +4,16 @@ const ELYSIAN_DATA = {
   whatsappNumber: "2348130886889",
   phoneDisplay: "+234 813 088 6889",
   prices: {
-    land: { sqm300: null, sqm600: null, acre1: null },
+    land: { sqm300: 3000000, sqm600: 6000000, acre1: 36000000 },
     buildings: { villa: null, bungalow: null, apartment: null, businessDistrict: null },
-    cottages: { bed1: null, bed2: null, bed3: null },
+    cottages: { bed1: 28000000, bed2: 36000000, bed3: 58000000 },
     greenhouse: { annualLease: 15000000 }
   },
   payment: {
     outright: true,
-    deposit: null,            // e.g. "30%" once confirmed
-    instalmentFrequency: null, // e.g. "Monthly" or "Quarterly"
-    duration: null,           // e.g. "12 months"
+    deposit: "30%",            // e.g. "30%" once confirmed
+    instalmentFrequency: "Monthly", // e.g. "Monthly" or "Quarterly"
+    duration: "6 Months",           // e.g. "12 months"
     finalPaymentDeadline: null
   },
   messages: {
