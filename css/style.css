@@ -487,13 +487,24 @@ nav ul#menu {
 
 /* work on price visibility */
 .price {
-    font: 900 1.7rem;
-    color: var(--green)
+    /* font: 900 1.7rem; */
+    color: var(--green);
+    font: italic 700 clamp(2rem, 3vw, 3.2rem) var(--sans);
+    animation: location-float 2.2s ease-in-out infinite
 }
 
 .price small {
     font: 500 .9rem var(--sans);
     color: #666
+}
+
+.price-heading {
+    animation: location-float 2.2s ease-in-out infinite
+}
+
+.price:hover {
+    color: var(--gold);
+    transform: scale(1.1)
 }
 
 .is-placeholder {
@@ -786,6 +797,7 @@ textarea[aria-invalid=true] {
 
 .legal {
     font-size: .85rem;
+    /* justify-self: center; */
     border-top: 1px solid rgba(255, 255, 255, .15);
     padding-top: 1rem
 }

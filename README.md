@@ -14,4 +14,4 @@ Same-named files in `assets/images/<section>/` (extracted from the brochure and 
 Upload the folder to Netlify, Vercel (static), GitHub Pages or cPanel. Then add the canonical URL and an absolute `og:image` URL in `index.html`.
 
 ## Outstanding placeholders
-All land, building, cottage prices; payment plan details; Privacy Policy and Terms pages; social media URLs; canonical URL; separate wireframe-style hero (the brochure entrance photo is used); landmark/amenity photos are brochure imagery (illustrative).
+All land, building, cottage prices; payment plan details; Privacy Policy and Terms pages; social media URLs; separate wireframe-style hero (the brochure entrance photo is used); landmark/amenity photos are brochure imagery (illustrative).
