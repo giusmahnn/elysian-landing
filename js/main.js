@@ -66,9 +66,10 @@
   }
 
   function reveal() {
-    const items = $$(".reveal");
+    const items = $$(".reveal, .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-blur, .reveal-clip, .reveal-stagger")
+      .filter((item) => !item.parentElement.closest(".reveal-stagger"));
     if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) { items.forEach((i) => i.classList.add("in")); return; }
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12 });
+    const io = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("in", e.isIntersecting)), { threshold: 0.12 });
     items.forEach((i) => io.observe(i));
   }
 
