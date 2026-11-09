@@ -11,9 +11,9 @@ const ELYSIAN_DATA = {
   },
   payment: {
     outright: true,
-    deposit: "30%",            // e.g. "30%" once confirmed
-    instalmentFrequency: "Monthly", // e.g. "Monthly" or "Quarterly"
-    duration: "6 Months",           // e.g. "12 months"
+    deposit: null,            // e.g. "30%" once confirmed
+    instalmentFrequency: null, // e.g. "Monthly" or "Quarterly"
+    duration: null,           // e.g. "12 months"
     finalPaymentDeadline: null
   },
   messages: {
