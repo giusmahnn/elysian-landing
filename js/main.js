@@ -76,5 +76,13 @@
   document.addEventListener("DOMContentLoaded", () => {
     populatePrices(); populatePayment(); populateWhatsApp(); nav(); reveal();
     $("#year").textContent = new Date().getFullYear();
+
+    const hero = document.getElementById("home");
+    if (hero) {
+      hero.addEventListener("click", (event) => {
+        if (event.target.closest("a, button")) return;
+        hero.classList.toggle("text-visible");
+      });
+    }
   });
 })();
