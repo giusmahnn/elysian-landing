@@ -11,7 +11,7 @@ Same-named files in `assets/images/<section>/` (extracted from the brochure and 
 `python3 -m http.server 8000` then open http://localhost:8000
 
 ## Deploy
-Upload the folder to Netlify, Vercel (static), GitHub Pages or cPanel. Then add the canonical URL and an absolute `og:image` URL in `index.html`.
+Upload the folder to Netlify, Vercel (static), GitHub Pages or cPanel. Keep the canonical URL and absolute `og:image` URL in `index.html` aligned with the live domain. After deployment, verify the site in Google Search Console and submit `/sitemap.xml`.
 
 ## Outstanding placeholders
 All land, building, cottage prices; payment plan details; Privacy Policy and Terms pages; social media URLs; separate wireframe-style hero (the brochure entrance photo is used); landmark/amenity photos are brochure imagery (illustrative).

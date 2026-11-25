@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elysianfarmsandresort.agrolocale.com/sitemap.xml
