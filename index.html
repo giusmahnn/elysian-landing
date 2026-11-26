@@ -81,6 +81,24 @@
             ]
         }
     </script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TWPB3NKR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18594349795/gmoqCKL17L8dEOOFvaJF',
+        'event_callback': callback
+      });
+      return false;
+    }
+    </script>
 </head>
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQBMDG2C"></script>
 <script>
@@ -106,10 +124,12 @@
                     <li><a href="#amenities">Amenities</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="m-only"><a class="btn btn-gold" data-wa="general">Chat on WhatsApp</a></li>
+                    <li class="m-only"><a class="btn btn-gold" data-wa="general"
+                            onclick="return gtag_report_conversion(this.href)">Chat on WhatsApp</a></li>
                 </ul>
             </nav>
-            <a class="btn btn-gold d-only" data-wa="general">Chat on WhatsApp</a>
+            <a class="btn btn-gold d-only" data-wa="general"
+                onclick="return gtag_report_conversion(this.href)">Chat on WhatsApp</a>
         </div>
     </header>
     <main id="main">
