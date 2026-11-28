@@ -27,8 +27,13 @@
       const v = Object.fromEntries(fields.map((f) => [f.name, f.value.trim()]));
       const msg = ["Hello Elysian Farms & Resort,", "", "Name: " + v.name, "Email: " + v.email, "Phone: " + v.phone,
         "Interest: " + v.interest, "", "Message: " + v.message].join("\n");
-      status.textContent = "Opening WhatsApp with your prepared message. Please press Send there to deliver it. Nothing has been sent to a server.";
-      window.open(window.ElysianWA(msg), "_blank", "noopener");
+      try {
+        sessionStorage.setItem("elysianEnquiryMessage", msg);
+      } catch (error) {
+        window.location.href = "thank-you.html?details=unavailable";
+        return;
+      }
+      window.location.href = "thank-you.html";
     });
   });
 })();

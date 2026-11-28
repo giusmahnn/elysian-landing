@@ -10,6 +10,8 @@ Same-named files in `assets/images/<section>/` (extracted from the brochure and 
 ## Test locally
 `python3 -m http.server 8000` then open http://localhost:8000
 
+Valid enquiries redirect to `thank-you.html`. That page contains the Meta Pixel Lead event and a WhatsApp link; the form details are carried in session storage for the link and are not submitted to a server. Verify the Lead event in Meta Pixel Helper after deployment.
+
 ## Deploy
 Upload the folder to Netlify, Vercel (static), GitHub Pages or cPanel. Keep the canonical URL and absolute `og:image` URL in `index.html` aligned with the live domain. After deployment, verify the site in Google Search Console and submit `/sitemap.xml`.
 
